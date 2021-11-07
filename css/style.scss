@@ -1,0 +1,351 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root{
+	--bg: #1A1B1F;
+	--bg-lt:#212329;
+	--lt-gr:#313237;
+	--grey:#3a3c47;
+	--blue:#3482e7;
+	--clr:white;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap');
+body{
+	width: 100%;
+	height: 100vh;
+background: var(--bg);
+color: var(--clr);
+font-family: 'Montserrat Alternates', sans-serif;
+font-size: 0.9rem;
+font: bold;
+}
+
+main{
+		width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.left{
+border-right: 3px solid var(--bg-lt);
+padding: 10px  ;
+overflow: hidden;
+
+.logo{
+	height: 5%;
+	img{
+		width: 95%;
+	}
+}
+
+.left-menu{
+	width: 100%;
+	height:100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	padding: 10px 0 20px 0;
+
+.menu{
+	width: 100%;
+}
+	.menu-item{
+		width: 100%;
+		display: flex;
+	align-items: center;
+	margin: 5px 0;
+	border-radius: 20px;
+	padding: 8px ;
+	cursor: pointer;
+	font-size: 0.8rem;
+
+	img{
+		margin-right: 10px;
+		width: 15px;
+	}
+	&:hover{
+		background: var(--bg-lt);
+	}
+	}
+
+	.profile{
+		width: 100%;
+	}
+	.user{
+		position: relative;
+img{
+	width: 30px;
+	margin-left: -5px;
+}
+		.online-ba{
+				width: 15px;
+		height: 15px;
+		position: absolute;
+		bottom: 5px;
+		left: 20px;
+		font-size: 0.7rem;
+		background: green;
+		border-radius: 50%;
+		}
+	}
+}
+}
+
+.right{
+	width: 100%;
+	height: 100%;
+	padding: 10px 20px 30px 20px ;
+
+
+.header{
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+.nav{
+	display: flex;
+	align-items: center;
+
+	li{
+		list-style-type: none;
+		margin: 0 10px;
+		padding: 3px 8px;
+		border-radius: 20px;
+		font-size: 0.8rem;
+	}
+	.active{
+		background: var(--blue);
+	}
+}
+.search{
+	display: flex;
+	align-items: center;
+.noty{
+	width: 20px;
+	position: relative;
+		margin-right: 20px;
+
+	img{
+		width: 20px;
+	}
+	.badge{
+		width: 10px;
+		height: 10px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		font-size: 0.7rem;
+		background: red;
+		border-radius: 50%;
+	}
+}
+	.sec{
+		position: relative;
+		input{
+			background: var(--bg-lt);
+			border: none;
+			padding: 6px 0 6px 30px;
+			border-radius: 20px;
+			color: var(--clr);
+			&:focus{
+outline: none;
+			}
+		}
+		img{
+			position: absolute;
+			top: 6px;
+			left: 5px;
+			width: 18px;
+		}
+	}
+}
+}
+
+.hero{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding-right: 30px;
+
+.main-hero{
+	position: relative;
+	border-radius: 10px 0 0 10px;
+	overflow: hidden;
+	width: 100%;
+	height: 270px;
+	margin: 5px 0;
+
+	&::before{
+		position: absolute;
+		content: "";
+		width: 100%;
+		height: 100%;
+		background: url('../assets/Rectangle\ 3.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -1;
+	opacity: 0.7;
+	}
+h1{
+	padding-left: 30px;
+	padding-top: 10px;
+}
+.info{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	padding-left: 30px ;
+
+	.desc{
+		.update{
+			font-size: 0.6rem;
+			padding: 5px 0;
+		}
+		p{
+			font-size: 1.5rem;
+		}
+	}
+	.cta{
+		width: 150px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background: var(--blue);
+		padding: 5px 10px;
+		border-radius: 10px;
+		margin: 13px 0;
+
+		img{
+			width: 24px;
+		}
+	}
+}
+
+}
+
+.side-hero{
+	width: 25%;
+	height: 270px;
+	border-radius: 0 10px 10px 0;
+	margin-left: 5px;
+	background: var(--bg-lt);
+
+.game-card{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0 10px;
+	margin: 4px 0;
+
+	.img-card{
+		padding-right: 8px;
+	img{
+		width: 45px;
+		height: 45px;
+	//	border-radius: 50%;
+	}
+	}
+}
+hr{
+width: 50%;
+margin: -5px 0 8px 10px;
+border-color: aquamarine;
+}
+
+}
+
+}
+
+.bar{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1px 20px 3px 20px;
+
+	.ico{
+		img{
+			width: 24px;
+		}
+	.left-arrow{
+transform: rotate(180deg);
+	}
+	}
+}
+
+.gos-cont{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+.sale-card{
+	width: 100%;
+	height: 100%;
+	position: relative;
+
+	img{
+		opacity: 0.8;
+	}
+	.info{
+		position: absolute;
+		bottom: 0;
+		padding: 10px ;
+
+		.name{
+			margin: 3px 0;
+			font-size: 0.7rem;
+			color: silver;
+			font: bold;
+		}
+		span{
+			margin-right: 5px;
+		}
+		.disc{
+			background: rgb(141, 211, 37);
+			color: var(--bg);
+			border-radius: 8px;
+			font-size: 0.8rem;
+			padding: 2px;
+		}
+		strike{
+			color: grey;
+		}
+		.price{
+			font: bold;
+		}
+	}
+}
+
+
+
+
+}
+
+}
+
+
+	.small-screen{
+		display: none;
+	}
+@media  (max-width:992px){
+	main{
+		display: none;
+	}
+	.small-screen{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		display: block;
+		font-size: 3rem;
+	}
+}
